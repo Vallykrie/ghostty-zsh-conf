@@ -1,0 +1,75 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/home/vallykrie/.config/neofetch/logo",
+    "type": "file",
+    "color": {
+      "1": "red" 
+    }
+  },
+  "display": {
+    "separator": ": "
+  },
+  "modules": [
+    { "type": "break" },
+    // --- TOP BORDER ---
+    {
+      "type": "custom",
+      "format": "┌──────────────────────────────────────┐"
+    },
+    
+    // --- INFO MODULES ---
+    // Neofetch used "\n \n" for double spacing, so we use "break" modules
+    { "type": "os", "key": "OS" },
+    
+    { "type": "host", "key": "Host" },
+    
+    { "type": "kernel", "key": "Kernel" },
+    
+    { "type": "uptime", "key": "Uptime" },
+    
+    { "type": "shell", "key": "Shell" },
+    
+    { "type": "display", "key": "Resolution" },
+    
+    { "type": "de", "key": "DE" },
+    
+    { "type": "terminal", "key": "Terminal" },
+    
+    { "type": "terminalfont", "key": "Terminal Font" },
+    
+    { "type": "cpu", "key": "CPU" },
+    
+    { "type": "gpu", "key": "GPU" },
+    
+    { "type": "memory", "key": "Memory" },
+    
+    {
+      "type": "disk",
+      "key": "Disk",
+      "folders": ["/", "/storage/emulated", "/server"]
+    },
+    
+    { "type": "battery", "key": "Battery" },
+    
+    { "type": "font", "key": "Font", "format": "{2}" },
+    
+    { "type": "media", "key": "Song" },
+    
+    { "type": "localip", "key": "Local IP" },
+    
+    // --- BOTTOM BORDER ---
+    {
+      "type": "custom",
+      "format": "└──────────────────────────────────────┘"
+    },
+    
+    
+    // --- COLORED DOTS ---
+    // This mimics your "${cl0}──${cl1}..." line using ANSI codes
+    {
+      "type": "custom",
+      "format": "\u001b[90m──\u001b[31m────\u001b[32m────\u001b[33m────\u001b[34m────\u001b[35m────\u001b[36m────\u001b[37m──"
+    }
+  ]
+}
