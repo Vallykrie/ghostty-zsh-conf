@@ -1,0 +1,37 @@
+theme = "Matte Black"
+
+# Background opacity and blur
+# background-opacity = 0.95
+background-blur = 10
+
+# Window padding
+window-padding-x = 16
+window-padding-y = 16
+window-padding-balance = true
+window-padding-color = background
+
+gtk-single-instance = desktop
+
+# Font setup
+font-family = JetBrains Mono
+font-size = 11
+
+# Programming ligatures
+font-feature = +liga
+font-feature = +calt
+font-feature = +dlig
+
+# Fallback fonts for better unicode
+font-family = Noto Color Emoji
+font-family = Noto Sans CJK JP
+
+# Shader
+custom-shader = ghostty-shaders/tft.glsl
+custom-shader-animation = true
+
+# Keybinds
+keybind = ctrl+r=reload_config
+keybind = ctrl+up=new_split:up
+keybind = ctrl+down=new_split:down
+keybind = ctrl+left=new_split:left
+keybind = ctrl+right=new_split:right
