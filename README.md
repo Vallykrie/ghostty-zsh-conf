@@ -1,0 +1,1 @@
+# ghostty-zsh-conf
